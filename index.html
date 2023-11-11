@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework-2</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
 </head>
 <body>
-    <h1>Cadastre-se para receber informações</h1>
-    <form action="">
+    
+    <form id="form" action="">
+        <h1>Cadastre-se para receber informações</h1>
+        <div class="main-content">
+        <div class="first-div">
         <label for="email">E-mail:</label>
         <input type="email" name="telephone" id="email" placeholder="Digite seu melhor E-mail">
+        </div>
+        <div class="second-div">
         <label for="telephone">Telefone celular:</label>
         <input type="tel" name="telephone" id="telephone" placeholder="Digite seu telefone">
-        <div>
-            <textarea style="margin-top: 15px;" placeholder="Deixe uma prévia da mensagem" name="" id="" cols="40" rows="20"></textarea>
         </div>
-        <button style="border-radius: 3px;">Enviar</button>
+        
+        <div>
+            <textarea style="margin-top: 15px;" placeholder="Deixe uma prévia da mensagem" name="" id="textArea" cols="40" rows="20"></textarea>
+        </div>
+        </div>
+        <button type="submit" id="button" style="border-radius: 3px;">Enviar</button>
 
     </form>
     
